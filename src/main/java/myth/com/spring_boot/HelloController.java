@@ -8,14 +8,14 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 @EnableAutoConfiguration 
+
 public class HelloController {
-	@RequestMapping("/hellow")   
-    @ResponseBody  
-    public String hellow(){   
   
-        return "哈喽，Spring Boot ！";   
+    @ResponseBody 
+    @RequestMapping("/hello") 
+    public String hello(){   
+        return "hello，Spring Boot ！";   
     }   
-  
   
     public static void main(String[] args) {   
         //第一个简单的应用，   
