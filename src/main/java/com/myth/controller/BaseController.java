@@ -6,7 +6,7 @@ public class BaseController {
 	
 	@ExceptionHandler({RuntimeException.class})  
     public String exception(RuntimeException e) {  
-        System.out.println("exception ...");  
+        System.out.println("parent exception ...");  
         //e.printStackTrace();  
         return "exception";  
     } 

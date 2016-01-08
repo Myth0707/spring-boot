@@ -26,5 +26,12 @@ public class HelloController extends BaseController {
 		SpringApplication.run(HelloController.class, args);
 
 	}
+	
+	@ExceptionHandler({RuntimeException.class})  
+    public String exception(RuntimeException e) {  
+        System.out.println("child exception ...");  
+        //e.printStackTrace();  
+        return "exception";  
+    } 
  
 }
