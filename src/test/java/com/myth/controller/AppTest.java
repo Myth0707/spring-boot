@@ -1,4 +1,4 @@
-package myth.com.spring_boot;
+package com.myth.controller;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
